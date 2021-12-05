@@ -1,0 +1,161 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.lista {
+    
+
+}
+
+.odkazy {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.odkaz {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+    color: dimgrey;
+}
+
+.aktivni {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.prvni_sekce {
+    background-color: aquamarine;
+    background-image: url("./images/pozadi.jpg");
+    background-position: center center;
+    min-height: 400px;
+    display: flex;
+}
+
+.prvni {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 0 20px;
+}
+
+.druhy {
+    background: url('/images/telefon.png');
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    flex: 1
+}
+
+.odstavec1 {
+    color: white;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.odstavec2 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonky {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    color: white;
+    background-color: #48418e; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.druha_sekce {
+    background-color: white;
+    min-height: 100px;
+}
+
+.kontajner {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    color: #48418e;
+    font-weight: bold;
+}
+
+.boxik > img {
+        width: 20%;
+        margin: 10px;
+}
+
+.boxik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.popis {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+.zapati {
+    background-color: #25133d;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+}
+
+.copyright {
+    margin: 10px 0 10px 0;
+}
